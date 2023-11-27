@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, rgb(253, 173, 173) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: wheat;
+    background-image: var(--gradient);
+    background-size: 200%;
+    background-position: right;
+    animation: gradient-animation 3s infinite alternate;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.hgroup {
+    font-family: 'Oliver';
+    font-size: 30px;
+    float: left;
+    color: rgb(44, 0, 0);
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 16px 5px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: whitesmoke;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+section {
+    margin: auto;
+    display: flex;
+}
+
+.pot {
+    margin-top: 5%;
+    width: 35%;
+    height: 35%;
+    -webkit-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.kanan {
+    margin-left: 25px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.teks {
+    font-family: 'patrick hand';
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    color: black;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-family: winkle;
+    font-weight: 800;
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    line-height: 50px;
+}
+
+.tombol {
+    background: rgb(118, 118, 255);
+    border-radius: 20px;
+    margin-left: 35%;
+    margin-top: 20px;
+    padding: 10px 5px 10px 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tombol:hover {
+    background: white;
+    text-decoration: none;
+}
